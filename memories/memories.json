@@ -1,0 +1,4 @@
+{
+  "tags": ["memories"],
+  "layout": "layouts/memory.njk"
+}
