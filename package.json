@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "npm run eleventy --serve"
+    "start": "npx eleventy --serve"
   },
   "repository": {
     "type": "git",
