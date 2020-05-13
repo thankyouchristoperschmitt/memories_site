@@ -16,6 +16,7 @@
   --size-large: 2rem;
   --size-x-large: 2.45rem;
   --radius: 0.25rem;
+  --flow-space: var(--size-large);
 }
 
 body {
@@ -71,12 +72,17 @@ main {
   margin: 0 auto;
 }
 
-footer {
+footer[role='contentinfo'] {
   min-height: 200px;
-  background: var(--color-mid) url(../img/shoes.png) bottom center no-repeat;
-  background-image: ;
-  background-size: 200px;
+  background: var(--color-dark) url(../img/shoes.png) bottom center no-repeat;
+  color: var(--color-light);
+  background-size: 280px;
   border-top: 1px dotted;
+  margin-top: var(--size-large);
+}
+
+hr {
+  margin: 4rem 0;
 }
 
 p {
@@ -86,6 +92,23 @@ p {
 :focus {
   outline: 1px dotted;
   outline-offset: 0.5rem;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+/* Adds space to siblings like magic */
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
 }
 
 /* Memories feed */
@@ -106,4 +129,33 @@ p {
   text-decoration: none;
   border-radius: var(--radius);
   font-size: var(--size-mid);
+}
+
+/* Memory page */
+.memory__header {
+  display: flex;
+  align-items: center;
+}
+
+.memory__header img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-inline-end: var(--size-mid);
+  border-radius: var(--radius);
+}
+
+.memory__content {
+  margin: var(--size-large) 0;
+}
+
+.memory__gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  grid-gap: var(--size-mid);
+}
+
+.memory__gallery img {
+  max-height: 300px;
+  object-fit: cover;
 }

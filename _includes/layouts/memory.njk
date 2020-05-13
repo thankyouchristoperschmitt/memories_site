@@ -8,9 +8,10 @@
       {% endif %}
       <h1>{{ title }}</h1>
     </div>
-    {{ content | safe }}
+    <div class="memory__content flow">
+      {{ content | safe }}
+    </div>
     {% if images %}
-      <hr />
       <div>
         <p class="visually-hidden" id="gallery-desc">More images by {{ title }}</p>
         <ul aria-describedby="gallery-desc" class="memory__gallery">
@@ -22,5 +23,9 @@
         </ul>
       </div>
     {% endif %}
+    <hr />
+    <footer class="memory__foot">
+      <a href="/">&larr; More memories</a>
+    </footer>
   </article>
 {% endblock %}
