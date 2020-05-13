@@ -3,18 +3,30 @@
   src: url('../fonts/sciencegothic.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
-* {
-  box-sizing: border-box;
+:root {
+  --color-light: #efefef;
+  --color-dark: #252525;
+  --color-mid: #e4e4e4;
+  --font-primary: 'sciencegothic', system-ui, helvetica, sans-serif;
+  --size-base: 1.25rem;
+  --size-mid: 1.6rem;
+  --size-large: 2rem;
+  --size-x-large: 2.45rem;
 }
 
 body {
-  font-family: system-ui, helvetica, sans-serif;
-  line-height: 1.4;
-  background: orange;
-  margin: 0;
-  height: 100vh;
+  font-family: Georgia, serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  background: var(--color-light);
+  color: var(--color-dark);
+}
+
+a {
+  color: currentColor;
 }
 
 .page-wrap {
@@ -23,24 +35,33 @@ body {
   grid-template-rows: min-content 1fr min-content;
 }
 
-h1,
-h2 {
-  font-family: 'sciencegothic', system-ui, helvetica, sans-serif;
-  line-height: 1.1;
-  font-weight: normal;
-  text-transform: uppercase;
+header[role='banner'] {
+  background: var(--color-mid);
+  padding: 1.5rem;
+  border-bottom: 1px dotted;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-header {
-  font-family: 'sciencegothic', system-ui, helvetica, sans-serif;
-  background: #353535;
-  color: white;
-  text-transform: uppercase;
-  padding: 1rem;
-}
-header a {
-  color: white;
+header[role='banner'] a {
   text-decoration: none;
+  font-size: 1.3rem;
+}
+
+h1,
+h2,
+header[role='banner'] {
+  font-family: var(--font-primary);
+  font-weight: normal;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: var(--size-x-large);
+}
+
+h2 {
+  font-size: var(--size-large);
 }
 
 main {
@@ -49,15 +70,19 @@ main {
   margin: 0 auto;
 }
 
-.memory {
-  padding: 1rem;
-  border: 1px solid black;
-  border-radius: 8px;
-  margin: 0 0 1rem 0;
+footer {
+  min-height: 200px;
+  background: var(--color-mid) url(../img/shoes.png) bottom center no-repeat;
+  background-image: ;
+  background-size: 200px;
+  border-top: 1px dotted;
 }
 
-footer {
-  min-height: 100px;
-  background: url(../img/shoes.png) bottom center no-repeat;
-  background-size: 100px;
+p {
+  max-width: 60ch;
+}
+
+:focus {
+  outline: 1px dotted;
+  outline-offset: 0.5rem;
 }
