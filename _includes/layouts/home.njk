@@ -1,5 +1,11 @@
----
-layout: layouts/base.njk
-templateClass: tmpl-home
----
-{{ content | safe }}
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <article>
+    <h1>{{ title }}</h1>
+    {{ content | safe }}
+
+    <h2>Memories</h2>
+    {% include "list.njk" %}
+  </article>
+{% endblock %}

@@ -1,7 +1,7 @@
-{%- for memory in collections.memories -%}
-  <div class="memory">
-    <h2>{{ memory.data.title }}</h2>
-    {{ memory.templateContent | safe }}
-  </div>
-{%- endfor -%}
-
+<ul class="memories">
+  {% for memory in collections.memories %}
+    <li class="memories__item">
+      <a href="{{ memory.url }}">{{ memory.data.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
