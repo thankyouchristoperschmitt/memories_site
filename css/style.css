@@ -15,6 +15,7 @@
   --size-mid: 1.6rem;
   --size-large: 2rem;
   --size-x-large: 2.45rem;
+  --radius: 0.25rem;
 }
 
 body {
@@ -85,4 +86,24 @@ p {
 :focus {
   outline: 1px dotted;
   outline-offset: 0.5rem;
+}
+
+/* Memories feed */
+.memories {
+  margin-top: var(--size-mid);
+}
+
+.memories__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  grid-gap: var(--size-mid);
+}
+
+.memories__item {
+  display: block;
+  padding: var(--size-mid);
+  border: 1px dotted;
+  text-decoration: none;
+  border-radius: var(--radius);
+  font-size: var(--size-mid);
 }
