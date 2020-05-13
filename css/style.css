@@ -157,5 +157,6 @@ p {
 
 .memory__gallery img {
   max-height: 300px;
+  min-width: 100%;
   object-fit: cover;
 }
