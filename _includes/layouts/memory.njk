@@ -1,5 +1,31 @@
----
-layout: layouts/base.njk
-templateClass: tmpl-home
----
-{{ content | safe }}
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <article class="memory">
+    <div class="memory__header">
+      {% if avatar %}
+        <img src="{{ avatar }}" alt="{{ title }} profile shot" />
+      {% endif %}
+      <h1>{{ title }}</h1>
+    </div>
+    <div class="memory__content flow">
+      {{ content | safe }}
+    </div>
+    {% if images %}
+      <div>
+        <p class="visually-hidden" id="gallery-desc">More images by {{ title }}</p>
+        <ul aria-describedby="gallery-desc" class="memory__gallery">
+          {% for item in images %}
+            <li>
+              <img src="{{ item.source }}" alt="{{ item.alt }}" />
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+    <hr />
+    <footer class="memory__foot">
+      <a href="/">&larr; More memories</a>
+    </footer>
+  </article>
+{% endblock %}
