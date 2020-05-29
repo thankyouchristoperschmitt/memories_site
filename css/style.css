@@ -38,9 +38,9 @@ a {
 }
 
 header[role='banner'] {
-  background: var(--color-mid);
+  background: var(--color-dark);
+  color: var(--color-light);
   padding: 1.5rem;
-  border-bottom: 1px dotted;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -48,6 +48,7 @@ header[role='banner'] {
 header[role='banner'] a {
   text-decoration: none;
   font-size: 1.3rem;
+  text-transform: uppercase;
 }
 
 h1,
@@ -125,10 +126,15 @@ p {
 .memories__item {
   display: block;
   padding: var(--size-mid);
-  border: 1px dotted;
+  background: var(--color-mid);
   text-decoration: none;
   border-radius: var(--radius);
   font-size: var(--size-mid);
+  border: 2px solid transparent;
+}
+.memories__item:hover,
+.memories__item:focus {
+  border: 2px solid;
 }
 
 /* Memory page */
