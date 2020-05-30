@@ -2,7 +2,7 @@
 title: Andy Bell
 avatar: /img/andy-bell.jpg
 images:
-  - source: /img/poster.jpg
+  - source: /img/poster.jpeg
     alt: The Shining CSS Specificity poster framed on a wall by a monitor
 ---
 
