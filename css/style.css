@@ -23,12 +23,6 @@ a {
   color: currentColor;
 }
 
-.page-wrap {
-  display: grid;
-  min-height: 100vh;
-  grid-template-rows: min-content 1fr min-content;
-}
-
 header[role='banner'] {
   margin-bottom: 1.5rem;
   text-align: center;
@@ -66,8 +60,10 @@ h2 {
 
 main {
   padding: 1rem;
-  max-width: 80ch;
-  margin: 0 auto;
+}
+article {
+  max-width: 60ch;
+  margin: 0 auto 2rem;
 }
 
 footer[role='contentinfo'] {
@@ -121,7 +117,9 @@ p {
 }
 
 .memories__item {
-  display: block;
+  display: grid;
+  align-content: center;
+  height: 100%;
   padding: var(--size-mid);
   background: var(--color-mid);
   text-decoration: none;
