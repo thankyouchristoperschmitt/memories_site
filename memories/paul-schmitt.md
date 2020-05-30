@@ -2,6 +2,6 @@
 title: Paul Schmitt
 avatar:
 images:
-  - source:
-    alt:
+  - source: /img/schmitt-kids.jpg
+    alt: 'From left to right: Paul, Christopher, David, Tiffany'
 ---
