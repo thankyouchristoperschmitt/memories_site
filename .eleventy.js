@@ -5,6 +5,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('img');
   eleventyConfig.addPassthroughCopy('css');
+  eleventyConfig.addPassthroughCopy('fonts');
 
   return {
     templateFormats: ['md', 'njk', 'html', 'liquid'],

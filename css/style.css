@@ -1,8 +1,19 @@
+@font-face {
+  font-family: 'Science Gothic';
+  font-stretch: 50% 200%;
+  font-style: oblique 0deg 10deg;
+  font-weight: 100 900;
+  src: url('../fonts/ScienceGothic-subset-min.woff2') format('woff2 supports variations'),
+       url('../fonts/ScienceGothic-subset-min.woff2') format('woff2-variations');
+  font-display: swap;
+}
+
 :root {
   --color-light: white;
   --color-dark: #252525;
   --color-mid: #e4e4e4;
-  --font-primary: clarendon-text-pro, serif;
+  --font-primary: 'Science Gothic', sans-serif;
+  --font-YOPQ: 73;
   --size-base: 1.25rem;
   --size-mid: 1.6rem;
   --size-large: 2rem;
@@ -14,6 +25,9 @@
 body {
   font-family: var(--font-primary);
   font-size: 1.3rem;
+  font-weight: 300;
+  font-stretch: 60%;
+  font-variation-settings: 'YOPQ' var(--font-YOPQ);
   line-height: 1.6;
   background: var(--color-light);
   color: var(--color-dark);
@@ -36,28 +50,41 @@ header[role='banner'] a {
   display: block;
   line-height: 1;
   font-size: clamp(1.3rem, 7vw, 4.2rem);
-  text-transform: uppercase;
 }
 header[role='banner'] a span {
   display: block;
+  font-stretch: 85%;
+  font-weight: 600;
+  --font-YOPQ: 30;
+  font-variation-settings: 'YOPQ' var(--font-YOPQ);
 }
 
 h1,
 h2,
 header[role='banner'] {
-  font-family: futura-pt-bold, sans-serif;
-  font-weight: normal;
+  font-family: 'Science Gothic', sans-serif;
+  font-stretch: 175%;
+  font-style: oblique 10deg;
+  font-weight: 250;
   line-height: 1.1;
 }
 
 h1 {
   font-size: var(--size-x-large);
+  --font-YOPQ: 50;
+  font-stretch: 85%;
+  font-style: oblique 0deg;
+  font-weight: 900;
 }
 
 h2 {
   font-size: var(--size-large);
 }
 
+em {
+  font-style: oblique 7deg;
+  font-synthesis: none;
+}
 main {
   padding: 1rem;
 }
@@ -80,6 +107,8 @@ hr {
 }
 
 p {
+  font-stretch: 80%;
+  font-weight: 300;
   max-width: 60ch;
 }
 
@@ -139,8 +168,11 @@ p {
 }
 
 .memory__header img {
-  width: 100px;
-  height: 100px;
+  --img-dimension: 6rem;
+  margin-inline-start: calc ((var(--img-dimension) + var(--size-mid)) * -1rem);
+  margin-inline-start: -7.6rem;
+  width: var(--img-dimension);
+  height: var(--img-dimension);
   object-fit: cover;
   margin-inline-end: var(--size-mid);
   border-radius: var(--radius);
@@ -148,6 +180,23 @@ p {
 
 .memory__content {
   margin: var(--size-large) 0;
+}
+
+.memory__content p:first-of-type {
+  position: relative;
+}
+
+.memory__content p:first-of-type::before {
+    content: '“';
+    font-size: 8em;
+    font-style: oblique 10deg;
+    font-weight: 900;
+    line-height: 1;
+    margin-inline-start: -0.5em;
+    margin-block-start: -0.1em;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
 }
 
 .memory__gallery {
