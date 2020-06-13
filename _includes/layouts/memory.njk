@@ -25,7 +25,11 @@
     {% endif %}
     <hr />
     <footer class="memory__foot">
+      {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% endif %}
+
       <a href="/">&larr; More memories</a>
-    </footer>
+
+      {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% endif %}
+    </footer> 
   </article>
 {% endblock %}
