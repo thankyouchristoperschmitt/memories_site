@@ -1,7 +1,26 @@
 ---
 title: Dave Rupert
-avatar:
+avatar: /img/dave-rupert.jpg
 images:
-  - source:
-    alt:
+  - source: /img/dave+christopher.jpg
+    alt: Dave and Christopher at the front of the room at CSS Dev Conf
 ---
+
+([Originally published](https://daverupert.com/2020/04/my-tall-friend-christopher/) on Dave's blog.)
+
+I first met Christopher in 2010 after giving my first talk at a local meetup on (Webkit-only) CSS Animations. A tall, soft-spoken man wearing Chuck Taylor's approached me afterwards to say he enjoyed my talk and we instantly bonded over Doctor Who. I was smitten by his excitement and energy for the Web and CSS so much that I had him on my poorly produced local area podcast that week. It’s rare to have a recording documenting the first time you met someone, but I can say without a doubt that this happenstance meeting changed the trajectory of my life and career.
+
+Little did I know at that meetup, I was talking to the Christopher Schmitt, author of a multitude of books and the O’Reilly CSS Cookbook. He and his partner Ari and their company Environments for Humans were purveyors of in-person conferences as well as pioneers in online conferences. I had some experience speaking, but Christopher truly made a bet on me as a conference speaker. This story isn’t unique. Dozens of people I know can attribute some of their visibility in our industry to their events. He and Ari were good at scouting out up-and-coming speakers and bringing people together. Some of my deepest industry friendships, fondest memories, and biggest laughs were formed at Christopher’s conferences. My life wouldn’t be the same without having attended those conferences and, as my co-worker Trent said, his impact is incalculable.
+
+Christopher cared deeply about the Web. In addition to his educational conferences, he worked on Web Standards curriculum through the WaSP project. After spinning down his conferences for health reasons, he eventually went on to work with Knowbility to help make the web more accessible. Those passions ran deep in him. There were only a couple times I saw him truly angry and upset and one of those times was about poorly coded websites.
+He had a thorough mind. His books were all encompassing deep dives and left no question unanswered. One chapter from one of his books was about image maps, I thought to myself it was a bit unnecessary, but from his point of view if someone was going to ask about them, he wanted to have an answer. You see this illustrated in this recent article on Color Theory and Contrast Ratios for 24 Accessibility, it’s one of the best articles on accessible colors I’ve ever read. He told me once that he produced all those conferences and events because he liked collecting information.
+Christopher and I shared an interest in making podcasts and traded guest spots back and forth over the years. I had him on the ATX Web Show a handful of times, he invited me on his podcast Non-Breaking Space, we had him on Shop Talk… but Christopher trumped in kindness. Environments for Humans sponsored nearly every episode of the first two or three years of Shop Talk. That was a big gift from a small events company that allowed Shop Talk to pay hosting fees, hire an editor, and not burnout. I lack the words to properly say thank you.
+
+Christopher was one of those unique situations where my online friends and my real life friends would overlap and we developed a good friendship over the years. We’d meet up quarterly for tacos and talk comics, podcasts, movies, and web design. Often he had an agenda to get me to jump on some idea he was working on. While I agreed to a lot of his schemes, in hindsight I wish I would have said “yes” to more, because only good can come from saying “yes” to Christopher Schmitt.
+We’d frequently run into each other at the Alamo Drafthouse. That was his second home, so maybe it wasn’t so strange running into him there, but seeing your web friends at movies makes the world feel small again. I remember the time he rented out the Alamo for his birthday so we could watch a bootleg restoration of the unaltered Star Wars on the big screen. And it was always a joy that at every Star Wars premiere, in the sea of cosplayers there would be one tall 6’7” Chewbacca lingering in the theater lobby and I could proudly say “There’s my friend, Chewy.”
+
+Last week Christopher passed away unexpectedly. He passed away at his home, sudden but peacefully. I’m still in shock, angry, and working through the news with tears. There are no guarantees in life, but not getting a chance to say “goodbye”, “thank you”, “I love you”, and all things you wish you had the foresight to say is heartbreaking and feels unjust. My heart goes out to Ari and his family. This dreary world is even dimmer and I shake my fist at God. I hope for peace.
+
+I’ve been reflecting on my friendship with Christopher for the past few days. This may sound trite or strange, but in a lot of ways Christopher’s trademark Chewbacca costume is emblematic of our relationship. It’s a well established fact that Wookies are fiercely loyal in their relationships and supportive for life. And that was Christopher. He relentlessly supported and cared for me, my family, and the Web community. He was a good friend. He was Chewy in the cockpit of the Millennium Falcon, letting me pretend to be Han Solo, letting me yell “Punch it!” from the pilot seat, while he did all the work and pulled all the levers as we made the jump to hyperspace.
+
+I owe a lot to my tall friend Christopher and I want to say “Thank you” one last time.
