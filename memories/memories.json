@@ -1,4 +1,3 @@
 {
-  "tags": ["memories"],
-  "layout": "layouts/memory.njk"
+  "permalink": false
 }

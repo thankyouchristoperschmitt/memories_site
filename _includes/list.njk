@@ -2,7 +2,7 @@
   <ul class="memories__list">
     {% for memory in collections.memories %}
       <li>
-        <a class="memories__item" href="{{ memory.url }}">{{ memory.data.title }}</a>
+        <a class="memories__item" href="/memories/{{ memory.data.title | slug }}/">{{ memory.data.title }}</a>
       </li>
     {% endfor %}
   </ul>
