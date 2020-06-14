@@ -1,5 +1,5 @@
 ---
-title: 'Memory'
+title: 'Memory' 
 pagination:
   data: collections.memories
   size: 1
@@ -9,6 +9,9 @@ permalink: '/memories/{{ item.data.title | slug }}/index.html'
 ---
 
 {% extends 'layouts/base.njk' %}
+
+{# Gotta set the title here #}
+{% set title = item.data.title + '’s Memory' %}
 
 {% block content %}
   <article class="memory">
