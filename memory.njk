@@ -1,0 +1,54 @@
+---
+title: 'Memory' 
+pagination:
+  data: collections.memories
+  size: 1
+  addAllPagesToCollections: true
+  alias: item
+permalink: '/memories/{{ item.data.title | slug }}/index.html'
+---
+
+{% extends 'layouts/base.njk' %}
+
+{# Gotta set the title here #}
+{% set title = item.data.title + '’s Memory' %}
+
+{% block content %}
+  <article class="memory">
+    <div class="memory__header">
+      {% if item.data.avatar %}
+        <!-- TODO put a Cloudinary fetch URL here to resize and optimize the image, or some other service. -->
+        <img src="{{ item.data.avatar }}" alt="{{ item.data.title }} profile shot" />
+      {% endif %}
+      <h1>{{ item.data.title }}</h1>
+    </div>
+    <div class="memory__content flow">
+      {{ item.templateContent | safe }}
+    </div>
+    {% if item.data.images %}
+      <div>
+        <p class="visually-hidden" id="gallery-desc">More images by {{ item.data.title }}</p>
+        <ul aria-describedby="gallery-desc" class="memory__gallery">
+          {% for image in item.data.images %}
+            <li>
+              <img src="{{ image.source }}" alt="{{ image.alt }}" />
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+    {% if pagination.href.next or pagination.href.previous %}
+      <hr />
+      <footer class="memory__foot">
+        <nav class="pagination" aria-label="Pagination links">
+          {% if pagination.href.previous %}
+            <a href="{{ pagination.href.previous }}" data-direction="backwards">Previous memory</a>
+          {% endif %}
+          {% if pagination.href.next %}
+            <a href="{{ pagination.href.next }}" data-direction="forwards">Next memory</a>
+          {% endif %}
+        </nav>
+      </footer>
+    {% endif %}
+  </article>
+{% endblock %}

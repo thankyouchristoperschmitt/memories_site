@@ -161,3 +161,14 @@ p {
   min-width: 100%;
   object-fit: cover;
 }
+
+/* Pagination component */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pagination > [data-direction='forwards'] {
+  margin-inline-start: auto;
+}
