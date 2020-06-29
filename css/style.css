@@ -73,6 +73,9 @@ footer[role='contentinfo'] {
   background-size: 280px;
   border-top: 1px dotted;
   margin-top: var(--size-large);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 hr {
@@ -157,9 +160,7 @@ p {
 }
 
 .memory__gallery img {
-  max-height: 300px;
   min-width: 100%;
-  object-fit: cover;
 }
 
 /* Pagination component */
