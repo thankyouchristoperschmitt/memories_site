@@ -17,6 +17,6 @@
   "homepage": "https://github.com/thankyouchristoperschmitt/memories_site#readme",
   "dependencies": {},
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0"
+    "@11ty/eleventy": "^1.0.2"
   }
 }
